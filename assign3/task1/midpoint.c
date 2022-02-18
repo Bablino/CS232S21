@@ -13,6 +13,7 @@ int midpoint_B(int x, int y) {
 }
 
 int midpoint_C(int x, int y) {
+  
     return (x & y) + ((x ^ y) >> 1);
 }
 

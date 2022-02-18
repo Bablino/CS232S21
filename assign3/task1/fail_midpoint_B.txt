@@ -1,0 +1,2 @@
+What appears to happen is that because midpointB turns the numbers to unsigned, it no longer understand the real value of the numbers. For example 0x1111 1110 + 0x0000 0001 should equal 0x1111 1111. However, because the numbers are unsigned midpointB doesn't register the negative after shifting and registers the number as 
+a larger positive number like 0x1111 1111 unsigned and doesn't register it as a negative. 

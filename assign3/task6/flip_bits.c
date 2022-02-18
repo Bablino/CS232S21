@@ -4,8 +4,11 @@
 // Note, the bits are counted from right to left. 
 // Flip the bits of x within range [start, end], in which both are inclusive.
 // Assume 0 <= start & end <= 31
-void flip_bits(unsigned * x,
-              unsigned start,
-              unsigned end) {
+void flip_bits(unsigned * x,unsigned start,unsigned end) {
     // YOUR CODE HERE
+    unsigned *temp= x;
+    for(int i=start; i<=end; i++)
+    {
+      *(x+i)= (*(temp+i)&*(x+i));
+    }
 }
