@@ -6,12 +6,11 @@
 // Assume 0 <= start & end <= 31
 unsigned * get_bits(unsigned x,unsigned start,unsigned end) {
 
-    int * a= (int *)malloc(32*sizeof(int));
-    for(int i=start; i<=end; i++)
+    unsigned * a= (unsigned *)malloc(32*sizeof(unsigned));
+    for(int i=0; i<32; i++)
     {
-      *(a+i)= ((x+i)&1); 
+      *(a+i)= (x>>(i+start)) & 1;
     }
-    *(a+32)='\0';
     return a;
     // YOUR CODE HERE
     // Returning NULL is a placeholder

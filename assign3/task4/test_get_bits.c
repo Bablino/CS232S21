@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
-#include "get_bits.c"
 unsigned * get_bits(unsigned x,
 					unsigned start,
 					unsigned end);
