@@ -6,13 +6,18 @@
 //2) No globals allowed.
 char* convert_2(int dec)
 {
-  char *arr = (char *) malloc(32*sizeof(char));
-  for(int i =0; i<32; i++)
+  
+  char *arr = malloc(sizeof(char*)*34);
+  int count=32;
+  arr[0]='0';
+  arr[1]='b';
+  for(char* p=&arr[32]; p>=&arr[2];p--)
   {
-    int bit = dec>>(31-i);
-    *(arr+i)= (bit&1)+'0';
+      
+      *p=((dec>>(32-count))&1) + '0';
+      count--;
   }
-  *(arr+32)='\0';
+  *(arr+33)='\0';
   return  arr;
 }
 

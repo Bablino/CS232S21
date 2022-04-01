@@ -1,0 +1,2 @@
+I believe the stack frame size is 1000001 because since it is calling recursion on every step, the stack frame will be one call ahead of the actual number of start. In the screenshot I entered 528 as the recursive number and there were 583 calls to the stack.
+

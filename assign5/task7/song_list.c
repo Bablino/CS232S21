@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "slist.h"
-#include "snode.h"
+#include "snode.c"
 
 struct slist *song_list;
 

@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
       str[n] = ch;
       ++n;
    }
-   for (int i = 0; i < n; ++i)
+   for (int i = 0; i < n; i++)
   {
     if(str[i]<='0'+9)
       putchar(str[i]);

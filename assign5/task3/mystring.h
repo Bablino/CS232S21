@@ -11,10 +11,13 @@ typedef struct mystring_t mystring_t;
  */
 
 /* Create a new string */
-mystring_t *mystring_new();
+mystring_t *mystring_new(){};
 
 /* return the length of chars in string */
-int mystring_get_len();
+int mystring_get_len()
+{
+  return size;
+};
 
 /* return the char array in string */
 char * mystring_get_data();

@@ -1,10 +1,10 @@
-#include <stdio.h>
+gdb #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
 
 /* both of these routines print and sum up numbers i where start <= i < stop */
 
-long
+long 
 printSumRangeIterative(int start, int stop)
 {
     int i;
@@ -16,7 +16,7 @@ printSumRangeIterative(int start, int stop)
     return sum;
 }
 
-long
+long 
 printSumRangeRecursive(int start, int stop)
 {
     long sum=0;
@@ -29,7 +29,7 @@ printSumRangeRecursive(int start, int stop)
 }
 
 
-int
+int 
 main(int argc, char **argv)
 {
 

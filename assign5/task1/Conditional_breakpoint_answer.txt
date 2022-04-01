@@ -1,0 +1,1 @@
+The sum would be all of the numbers between 0 and 581 inclusive. so it would be 581 factorial essentially. 

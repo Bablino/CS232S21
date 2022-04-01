@@ -6,9 +6,8 @@
 // Assume 0 <= start & end <= 31
 void flip_bits(unsigned * x,unsigned start,unsigned end) {
     // YOUR CODE HERE
-    unsigned *temp= x;
-    for(int i=start; i<=end; i++)
+    for(unsigned* i=&x[end]; i>=&x[start]; i--)
     {
-      *(x+i)= (*(temp+i)&*(x+i));
+        *i= (*i ^ 1);
     }
 }

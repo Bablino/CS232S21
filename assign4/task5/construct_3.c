@@ -8,13 +8,13 @@ typedef struct node {
 node_t * construct_3() {
     //Allocate three pointers: 
     //x for the first Node, and temporary pointers y and z for the other two Nodes.
-    struct node* x;
-    struct node* y;
-    struct node* z;
+    node_t* x;
+    node_t* y;
+    node_t* z;
     //Allocate three Node pointees and store references to them in the there pointers.
-    x=malloc(sizeof(struct node*));
-    y=malloc(sizeof(struct node*));
-    z=malloc(sizeof(struct node*));
+    x= malloc(sizeof(node_t*));
+    y= malloc(sizeof(node_t*));
+    z= malloc(sizeof(node_t*));
     //Dereference each pointer to store the appropriate number into the value field in its pointee.
     x->value=1;
     y->value=2;
@@ -31,7 +31,7 @@ node_t * construct_3() {
 int dump_all(node_t*);
 int main (int argc, char ** argv) {
 
-    node_t * x = construct_3();
+    node_t* x = construct_3();
     return dump_all(x);
 
 }
